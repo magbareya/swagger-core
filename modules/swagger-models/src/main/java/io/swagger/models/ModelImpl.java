@@ -140,6 +140,7 @@ public class ModelImpl extends AbstractModel {
     }
 
     public void addRequired(String name) {
+        this.required.add(name);
         Property p = properties.get(name);
         if (p != null) {
             p.setRequired(true);
